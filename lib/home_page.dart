@@ -25,12 +25,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Center(child: Text("Fortune Cookie")),
       ),
-      // TODO: 17. 버튼이 클릭되면 텍스트 메시지가 업데이트되도록 처리해주세요. (Hint! 상태 갱신은 setState 메서드를 사용하세요.)
       body: Column(
         children: [
           Container(child: Image.asset('assets/images/fortune-cookie.jpg')),
           Container(
-              child: const Text("text",
+              child: Text(
+                _cookie.message,
                 style: TextStyle(
                   fontSize: 18,
                 ),
@@ -38,7 +38,11 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             child: MaterialButton(
-              onPressed: () {  },
+              onPressed: () {
+                setState(() {
+                  _cookie = _fortuneCookieBox.pick;
+                });
+              },
               color: Colors.red,
               height: 50,
               minWidth: 300,
