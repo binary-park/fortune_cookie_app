@@ -16,6 +16,10 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
 
+    pick();
+  }
+
+  void pick() {
     _cookie = _fortuneCookieBox.pick;
   }
 
@@ -40,7 +44,7 @@ class _HomePageState extends State<HomePage> {
             child: MaterialButton(
               onPressed: () {
                 setState(() {
-                  _cookie = _fortuneCookieBox.pick;
+                  pick();
                 });
               },
               color: Colors.red,
@@ -60,5 +64,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-// TODO: 19. 이제 각자의 취향대로 앱을 꾸며주세요!
