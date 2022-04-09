@@ -3,3 +3,7 @@ class FortuneCookie {
 
   const FortuneCookie(this.message);
 }
+
+class FortuneCookieBox {
+
+}

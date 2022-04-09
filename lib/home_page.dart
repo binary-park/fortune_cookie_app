@@ -50,7 +50,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-// TODO: 10. FortuneCookieBox 클래스 만들어주세요.
 // TODO: 11. FortuneCookieBox 클래스에 List<FortuneCookie> _cookies 멤버를 추가해주세요.
 // TODO: 12. 아래 메세지를 이용해서 FortuneCookie 인수를 만들고 _cookies에 추가해주세요.
 /*
