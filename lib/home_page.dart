@@ -33,31 +33,27 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          Container(child: Image.asset('assets/images/fortune-cookie.jpg')),
-          Container(
-              child: Text(
-                _cookie.message,
-                style: TextStyle(
-                  fontSize: 18,
-                ),
-              )
+          Image.asset('assets/images/fortune-cookie.jpg'),
+          Text(
+            _cookie.message,
+            style: const TextStyle(
+              fontSize: 18,
+            ),
           ),
-          Container(
-            child: MaterialButton(
-              onPressed: () {
-                setState(() {
-                  pick();
-                });
-              },
-              color: Colors.red,
-              height: 50,
-              minWidth: 300,
-              child: const Text(
-                "Lucky!",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                ),
+          MaterialButton(
+            onPressed: () {
+              setState(() {
+                pick();
+              });
+            },
+            color: Colors.red,
+            height: 50,
+            minWidth: 300,
+            child: const Text(
+              "Lucky!",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
               ),
             ),
           )
