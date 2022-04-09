@@ -32,6 +32,7 @@ class _HomePageState extends State<HomePage> {
         title: const Center(child: Text("Fortune Cookie")),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Image.asset('assets/images/fortune-cookie.jpg'),
           Text(
