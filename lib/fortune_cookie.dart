@@ -17,4 +17,14 @@ class FortuneCookieBox {
     const FortuneCookie("개 같이 코딩해서 정승처럼 사표쓴다."),
     const FortuneCookie("될성부른 코드는 들여쓰기부터 안다."),
   ];
+
+  int _index = 0;
+
+  FortuneCookie get pick {
+    if (_index >= _cookies.length) {
+      _index = 0;
+    }
+
+    return _cookies[_index++];
+  }
 }

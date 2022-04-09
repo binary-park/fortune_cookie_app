@@ -50,6 +50,5 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-// TODO: 13. FortuneCookieBox 클래스에 pick getter를 추가하여 FortuneCookie를 순서대로 반 반환해주세요.
 
 // TODO: 19. 이제 각자의 취향대로 앱을 꾸며주세요!
