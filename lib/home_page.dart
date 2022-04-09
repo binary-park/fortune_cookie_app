@@ -12,7 +12,12 @@ class _HomePageState extends State<HomePage> {
   final FortuneCookieBox _fortuneCookieBox = FortuneCookieBox();
   late FortuneCookie _cookie;
 
-  // TODO: 16. 앱 실행 시 표시될 쿠키를 초기화해주세요. (Hint! initState 메서드를 오버라이드 해주세요.)
+  @override
+  void initState() {
+    super.initState();
+
+    _cookie = _fortuneCookieBox.pick;
+  }
 
   @override
   Widget build(BuildContext context) {
