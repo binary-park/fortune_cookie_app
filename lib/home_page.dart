@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fortune_cookie_app/fortune_cookie.dart';
 
+import 'fortune_cookie_box.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
