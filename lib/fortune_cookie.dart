@@ -5,5 +5,5 @@ class FortuneCookie {
 }
 
 class FortuneCookieBox {
-
+  late final List<FortuneCookie> _cookies;
 }
