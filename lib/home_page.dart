@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final FortuneCookieBox _fortuneCookieBox = FortuneCookieBox();
-  // TODO: 15. 현재 표시 중인 쿠키를 가르키는 _cookie 변수를 선언해주세요.
+  late FortuneCookie _cookie;
 
   // TODO: 16. 앱 실행 시 표시될 쿠키를 초기화해주세요. (Hint! initState 메서드를 오버라이드 해주세요.)
 
