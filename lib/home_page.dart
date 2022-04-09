@@ -16,7 +16,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // TODO: 1. AppBar를 추가해주세요.
+      appBar: AppBar(
+      ),
       // TODO: 2. AppBar 타이틀을 "Fortune Cookie"로 하고 중앙 정렬 해주세요.
 
       // TODO: 4. 화면에 fortune-cookie.jpg 이미지를 표시해주세요.
