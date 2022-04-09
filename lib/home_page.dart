@@ -19,7 +19,6 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Center(child: Text("Fortune Cookie")),
       ),
-      // TODO: 6. 텍스트 아래에 붉은색 버튼(가로 300, 높이 50)을 추가해주세요. (Hint! Column을 사용하세요.)
       // TODO: 7. 버튼 텍스트는 Lucky!로, 글자 크기를 20, 색상을 흰색으로 설정해주세요.
 
       // TODO: 17. 버튼이 클릭되면 텍스트 메시지가 업데이트되도록 처리해주세요. (Hint! 상태 갱신은 setState 메서드를 사용하세요.)
@@ -32,6 +31,14 @@ class _HomePageState extends State<HomePage> {
                   fontSize: 18,
                 ),
               )
+          ),
+          Container(
+            child: MaterialButton(
+              onPressed: () {  },
+              color: Colors.red,
+              height: 50,
+              minWidth: 300,
+            ),
           )
         ],
       ),
